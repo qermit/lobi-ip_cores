@@ -1,0 +1,7 @@
+modules = {
+	"local" : [
+		"general",
+		"wishbone"
+		]
+	}
+

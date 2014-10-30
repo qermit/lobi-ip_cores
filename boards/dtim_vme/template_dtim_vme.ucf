@@ -1,0 +1,238 @@
+### @todo: sprawdzic zasilania
+#VOLTAGE  = 3.3 V;
+
+
+#Created by Constraints Editor (xc3s1000-fg456-5) - 2010/06/10
+NET "T_SCLK0_PIN" TNM_NET = "T_SCLK0_PIN";
+TIMESPEC TS_T_SCLK0_PIN = PERIOD "T_SCLK0_PIN" 15 ns HIGH 50 %;
+
+
+##NET "NIM_OUT[7]" LOC = A7;
+##NET "NIM_OUT[6]" LOC = B7;
+##NET "NIM_OUT[5]" LOC = D7;
+NET "NIM_OUT[4]" LOC = E7;
+NET "NIM_OUT[3]" LOC = B6;
+NET "NIM_OUT[2]" LOC = C6;
+NET "NIM_OUT[1]" LOC = D6;
+NET "NIM_OUT[0]" LOC = E6;
+
+
+#NET "NIM_IN[0]" LOC = D10;
+#NET "NIM_IN[1]" LOC = F6;
+#NET "NIM_IN[2]" LOC = E5;
+#NET "NIM_IN[3]" LOC = F7;
+#NET "NIM_IN[4]" LOC = B4;
+#NET "NIM_IN[5]" LOC = A4;
+#NET "NIM_IN[6]" LOC = D5;
+NET "NIM_IN[7]" LOC = C5;
+
+
+NET "vme_am_i[5]" LOC = C19;
+NET "vme_am_i[4]" LOC = B20;
+NET "vme_am_i[3]" LOC = A19;
+NET "vme_am_i[2]" LOC = B19;
+NET "vme_am_i[1]" LOC = C18;
+NET "vme_am_i[0]" LOC = D18;
+
+NET "vme_ds_n_i[0]" LOC = D14;
+NET "vme_ds_n_i[1]" LOC = E14;
+NET "vme_berr_o" LOC=C16;
+
+NET "vme_addr_b[31]" LOC = W20;
+NET "vme_addr_b[30]" LOC = W21;
+NET "vme_addr_b[29]" LOC = W19;
+NET "vme_addr_b[28]" LOC = V19;
+NET "vme_addr_b[27]" LOC = Y22;
+NET "vme_addr_b[26]" LOC = W22;
+NET "vme_addr_b[25]" LOC = Y19;
+NET "vme_addr_b[24]" LOC = Y20;
+NET "vme_addr_b[23]" LOC = AB15;
+NET "vme_addr_b[22]" LOC = AA15;
+NET "vme_addr_b[21]" LOC = W15;
+NET "vme_addr_b[20]" LOC = V15;
+NET "vme_addr_b[19]" LOC = AB16;
+NET "vme_addr_b[18]" LOC = AA16;
+NET "vme_addr_b[17]" LOC = W16;
+NET "vme_addr_b[16]" LOC = V16;
+NET "vme_addr_b[15]" LOC = W17;
+NET "vme_addr_b[14]" LOC = V17;
+NET "vme_addr_b[13]" LOC = AB18;
+NET "vme_addr_b[12]" LOC = AA18;
+NET "vme_addr_b[11]" LOC = Y18;
+NET "vme_addr_b[10]" LOC = W18;
+NET "vme_addr_b[9]" LOC = AB19;
+NET "vme_addr_b[8]" LOC = AA19;
+NET "vme_addr_b[7]" LOC = V12;
+NET "vme_addr_b[6]" LOC = U12;
+NET "vme_addr_b[5]" LOC = AA13;
+NET "vme_addr_b[4]" LOC = Y13;
+NET "vme_addr_b[3]" LOC = V13;
+NET "vme_addr_b[2]" LOC = U13;
+NET "vme_addr_b[1]" LOC = AB14;
+NET "vme_addr_b[0]" LOC = V14;
+
+NET "vme_data_b[31]" LOC = K18;
+NET "vme_data_b[30]" LOC = K17;
+NET "vme_data_b[29]" LOC = J22;
+NET "vme_data_b[28]" LOC = J21;
+NET "vme_data_b[27]" LOC = J19;
+NET "vme_data_b[26]" LOC = J18;
+NET "vme_data_b[25]" LOC = H22;
+NET "vme_data_b[24]" LOC = H21;
+NET "vme_data_b[23]" LOC = J17;
+NET "vme_data_b[22]" LOC = H18;
+NET "vme_data_b[21]" LOC = G22;
+NET "vme_data_b[20]" LOC = G21;
+NET "vme_data_b[19]" LOC = H19;
+NET "vme_data_b[18]" LOC = G20;
+NET "vme_data_b[17]" LOC = F21;
+NET "vme_data_b[16]" LOC = F20;
+NET "vme_data_b[15]" LOC = G19;
+NET "vme_data_b[14]" LOC = F19;
+NET "vme_data_b[13]" LOC = G18;
+NET "vme_data_b[12]" LOC = G17;
+NET "vme_data_b[11]" LOC = E22;
+NET "vme_data_b[10]" LOC = E21;
+NET "vme_data_b[9]" LOC = E20;
+NET "vme_data_b[8]" LOC = E19;
+NET "vme_data_b[7]" LOC = F18;
+NET "vme_data_b[6]" LOC = E18;
+NET "vme_data_b[5]" LOC = D22;
+NET "vme_data_b[4]" LOC = D21;
+NET "vme_data_b[3]" LOC = D19;
+NET "vme_data_b[2]" LOC = D20;
+NET "vme_data_b[1]" LOC = C21;
+NET "vme_data_b[0]" LOC = C20;
+
+NET "vme_data_b_o[31]" LOC = T20;
+NET "vme_data_b_o[30]" LOC = T19;
+NET "vme_data_b_o[29]" LOC = T22;
+NET "vme_data_b_o[28]" LOC = T21;
+NET "vme_data_b_o[27]" LOC = R22;
+NET "vme_data_b_o[26]" LOC = R21;
+NET "vme_data_b_o[25]" LOC = P19;
+NET "vme_data_b_o[24]" LOC = R19;
+NET "vme_data_b_o[23]" LOC = P18;
+NET "vme_data_b_o[22]" LOC = P17;
+NET "vme_data_b_o[21]" LOC = P22;
+NET "vme_data_b_o[20]" LOC = P21;
+NET "vme_data_b_o[19]" LOC = N18;
+NET "vme_data_b_o[18]" LOC = N17;
+NET "vme_data_b_o[17]" LOC = N20;
+NET "vme_data_b_o[16]" LOC = N19;
+NET "vme_data_b_o[15]" LOC = N22;
+NET "vme_data_b_o[14]" LOC = N21;
+NET "vme_data_b_o[13]" LOC = M18;
+NET "vme_data_b_o[12]" LOC = M17;
+NET "vme_data_b_o[11]" LOC = M20;
+NET "vme_data_b_o[10]" LOC = M19;
+NET "vme_data_b_o[9]" LOC = M22;
+NET "vme_data_b_o[8]" LOC = M21;
+NET "vme_data_b_o[7]" LOC = L22;
+NET "vme_data_b_o[6]" LOC = L21;
+NET "vme_data_b_o[5]" LOC = L20;
+NET "vme_data_b_o[4]" LOC = L19;
+NET "vme_data_b_o[3]" LOC = L18;
+NET "vme_data_b_o[2]" LOC = L17;
+NET "vme_data_b_o[1]" LOC = K22;
+NET "vme_data_b_o[0]" LOC = K21;
+
+NET "CLK40Ex_PIn" LOC = Y11;
+#NET "DAC_DATA_PIN" LOC = B8;
+#NET "DAC_SCLK_PIN" LOC = A8;
+#NET "DAC_SYNC_PIN" LOC = F9;
+#NET "DISP_CLK_PIN" LOC = AA10;
+#NET "DISP_DATA_PIN" LOC = AB10;
+#NET "DISP_LE_PIN" LOC = W10;
+#NET "DR0_PRI_PIN" LOC = M3;
+#NET "DR0_SEC_PIN" LOC = M4;
+#NET "DR1_PRI_PIN" LOC = N5;
+#NET "DR1_SEC_PIN" LOC = N6;
+#NET "DSP_PF0_TMR0_PIN" LOC = V5;
+#NET "DSP_PF8_PIN" LOC = U3;
+#   attribute LOC of DSP_PF9_PIN : signal is "U2";
+
+#NET "dsp_tif_sck" LOC = U2;
+#NET "DSP_UART_TX_PIN" LOC = R2;
+#NET "DSP_UART_RX_PIN" LOC = R1;
+
+NET "LED1_PIN" LOC = D1;
+NET "LED2_PIN" LOC = C1;
+NET "LED3_PIN" LOC = E4;
+#NET "LED4_PIN" LOC = D4;
+
+NET "LVTTLA0_PIN" LOC = AA5;
+NET "LVTTLA1_PIN" LOC = AB5;
+#NET "LVTTLA2_PIN" LOC = W5;
+#NET "LVTTLA3_PIN" LOC = Y5;
+#NET "LVTTLA4_PIN" LOC = AA4;
+##NET "LVTTLA5_PIN" LOC = AB4;
+##NET "LVTTLA6_PIN" LOC = AA3;
+##NET "LVTTLA7_PIN" LOC = Y4;
+
+NET "LVTTLC0_PIN" LOC = AA9;
+NET "LVTTLC1_PIN" LOC = AB9;
+NET "LVTTLC2_PIN" LOC = V9;
+NET "LVTTLC3_PIN" LOC = W9;
+NET "LVTTLC4_PIN" LOC = AA8;
+##NET "LVTTLC5_PIN" LOC = AB8;
+##NET "LVTTLC6_PIN" LOC = V8;
+NET "LVTTLC7_PIN" LOC = W8;
+
+NET "MILBUS_PIN" LOC = A10;
+##NET "R_FS0_PIN" LOC = M2;
+##NET "R_FS1_PIN" LOC = N4;
+##NET "R_SCLK0_PIN" LOC = M1;
+##NET "R_SCLK1_PIN" LOC = N3;
+##NET "RS232_RX_PIN" LOC = Y1;
+##NET "RS232_TX_PIN" LOC = Y3;
+NET "T_FS0_PIN" LOC = M6;
+NET "T_FS1_PIN" LOC = P2;
+NET "T_SCLK0_PIN" LOC = M5;
+##NET "T_SCLK1_PIN" LOC = P1;
+NET "TD0_PRI_PIN" LOC = N1;
+NET "TD0_SEC_PIN" LOC = N2;
+NET "TD1_SEC_PIN" LOC = P5;
+NET "TD1_PRI_PIN" LOC = P4;
+NET "vme_as_n_i" LOC = E15;
+NET "vme_dtack_n_b" LOC = B15;
+NET "vme_write_n_i" LOC = A15;
+NET "vme_data_dir_o[0]" LOC = K19;
+NET "vme_data_dir_o[1]" LOC = K20;
+NET "vme_lword_n_b" LOC = B17;
+NET "vme_iack_n_i" LOC = D15;
+NET "vme_rst_n_i" LOC = D16;
+
+NET "vme_irq_n_o[0]" LOC = T18;
+NET "vme_irq_n_o[1]" LOC = R18;
+NET "vme_irq_n_o[2]" LOC = U20;
+NET "vme_irq_n_o[3]" LOC = U21;
+NET "vme_irq_n_o[4]" LOC = U18;
+NET "vme_irq_n_o[5]" LOC = T17;
+NET "vme_irq_n_o[6]" LOC = V21;
+
+
+NET "LVTTLB0_PIN" LOC = AA7 | PULLUP;
+NET "LVTTLB1_PIN" LOC = AB7 | PULLUP;
+NET "LVTTLB2_PIN" LOC = W7 | PULLUP;
+NET "LVTTLB3_PIN" LOC = Y7 | PULLUP;
+NET "LVTTLB4_PIN" LOC = Y6 | PULLUP;
+NET "LVTTLB5_PIN" LOC = AA6 | PULLUP;
+#NET "LVTTLB6_PIN" LOC = V6;
+#NET "LVTTLB7_PIN" LOC = W6;
+
+# PlanAhead Generated physical constraints 
+# Nieporutowane
+#NET "DBUS[7]" LOC = W6;
+#NET "DBUS[6]" LOC = V6;
+#NET "DBUS[5]" LOC = AA6;
+#NET "DBUS[4]" LOC = Y6;
+#NET "DBUS[3]" LOC = Y7;
+#NET "DBUS[2]" LOC = W7;
+#NET "DBUS[1]" LOC = AB7;
+#NET "DBUS[0]" LOC = AA7;
+
+#NET "/lemo_tranceiver_info_exchange/*" KEEP;
+#NET "/local_rst" KEEP;
+#NET "/local_rst_n" KEEP;
+
