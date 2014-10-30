@@ -57,7 +57,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-use work.vme_timer_pkg.all;
+use work.lobi_general_pkg.all;
+use work.dtim_vme_pkg.all;
 --library work;
 --use work.bicolor_led_ctrl_pkg.all;
 library UNISIM;

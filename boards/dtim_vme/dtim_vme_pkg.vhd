@@ -134,7 +134,7 @@ component VME64xCore_Top is
 
 
 ---------------------------------------------------------------------------------------------------
-  component fp_event_logger_wb_slave
+  component wbs_event_logger
     generic(
     g_CLK_FREQ     : natural := 125000000;  -- in Hz
     g_REFRESH_RATE : natural := 250         -- in Hz
@@ -164,7 +164,7 @@ component VME64xCore_Top is
     );
   end component;
 ---------------------------------------------------------------------------------------------------
-component fp_gsi_simulator_wb_slave is
+component wbs_gsi_simulator is
   generic(
     g_CLK_FREQ     : natural := 125000000;  -- in Hz
     g_REFRESH_RATE : natural :=   2000000   -- in Hz
@@ -219,25 +219,7 @@ end component;
  end component;
 
 
-	COMPONENT ram_logger
-	  PORT (
-		 clka : IN STD_LOGIC;
-		 rsta : IN STD_LOGIC;
-		 ena : IN STD_LOGIC;
-		 wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-		 addra : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
-		 dina : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
-		 douta : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
-		 clkb : IN STD_LOGIC;
-		 rstb : IN STD_LOGIC;
-		 enb : IN STD_LOGIC;
-		 web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-		 addrb : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
-		 dinb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
-		 doutb : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
-	  );
-	  
-	  END COMPONENT;
+
 	  
 end dtim_vme_pkg;
 

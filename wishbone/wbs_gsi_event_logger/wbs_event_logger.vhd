@@ -5,13 +5,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 
-library work
+library work;
 use work.lobi_general_pkg.all;
 
 --=================================================================================================
 --                              Entity declaration for fp_info_wb_slave
 --=================================================================================================
-entity fp_event_logger_wb_slave is
+entity wbs_event_logger is
   generic(
     g_CLK_FREQ     : natural := 125000000;  -- in Hz
     g_REFRESH_RATE : natural :=   2000000   -- in Hz
@@ -41,13 +41,13 @@ entity fp_event_logger_wb_slave is
 	  gate_start_o       : out std_logic;
      gate_end_o         : out std_logic
 	  );
-end fp_event_logger_wb_slave;
+end wbs_event_logger;
 
 
 --=================================================================================================
 --                                    architecture declaration
 --=================================================================================================
-architecture behavioral of fp_event_logger_wb_slave is
+architecture behavioral of wbs_event_logger is
 
   ------------------------------------------------------------------------------
   -- Constants declaration
@@ -109,6 +109,26 @@ architecture behavioral of fp_event_logger_wb_slave is
   signal r_refresh_cnt_init : std_logic_vector(31 downto 0);
   
   signal s_simulation: std_logic;
+
+	COMPONENT ram_logger
+	  PORT (
+		 clka : IN STD_LOGIC;
+		 rsta : IN STD_LOGIC;
+		 ena : IN STD_LOGIC;
+		 wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+		 addra : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+		 dina : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+		 douta : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
+		 clkb : IN STD_LOGIC;
+		 rstb : IN STD_LOGIC;
+		 enb : IN STD_LOGIC;
+		 web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+		 addrb : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+		 dinb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
+		 doutb : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
+	  );
+	  
+	  END COMPONENT;
 
 --=================================================================================================
 --                                       architecture begin
