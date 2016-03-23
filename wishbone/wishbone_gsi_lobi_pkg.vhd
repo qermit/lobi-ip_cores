@@ -147,6 +147,25 @@ package wishbone_gsi_lobi_pkg is
 			  sync_edge_o : out std_logic_vector(g_num_pins-1 downto 0));
 end component;
 
+
+  component xwb_tics_adv
+    generic (
+      g_interface_mode      : t_wishbone_interface_mode      := CLASSIC;
+      g_address_granularity : t_wishbone_address_granularity := WORD;
+      g_period              : integer);
+    port (
+      clk_sys_i : in  std_logic;
+      rst_n_i   : in  std_logic;
+      
+      trig_i                                    : in std_logic;
+      trig_o                                    : out std_logic;
+      tick_i                                    : in std_logic;
+      tick_o                                    : out std_logic;
+      
+      slave_i   : in  t_wishbone_slave_in;
+      slave_o   : out t_wishbone_slave_out;
+      desc_o    : out t_wishbone_device_descriptor);
+  end component;
  
 end wishbone_gsi_lobi_pkg;
 
